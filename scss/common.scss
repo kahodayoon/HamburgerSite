@@ -1,10 +1,4 @@
-@charset "utf-8";
-// common.scss
-@use "foundation/_base.scss";
-@use "foundation/index.scss";
-@use "layout/l-header";
-@use "layout/l-main";
-@use "layout/l-footer";
-@use "object/component";
-@use "object/project";
-@use "object/utility";
+//ここにscssディレクトリの中にあるfoundationなどのディレクトリを追記する。
+
+@use "foundation";
+@use "layout";
