@@ -1,12 +1,18 @@
 //共通部分
+$font-jp: 'M PLUS 1', sans-serif;
+$font-en: 'Roboto', sans-serif;
+$main-bk-color:#fff;
+$top-bk-color:#fff7ef;
+
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-jp;
+  font-family: $font-en;
   color: #3c2a10;
-  background-color: #fff;
+  background-color: $main-bk-color;
 }
 a {
   text-decoration: none;
@@ -19,6 +25,6 @@ li {
   list-style: none;
 }
 .wrapper {
-    margin: 0 auto;
-    padding: 0 5.2%;
-  }
+  margin: 0 auto;
+  padding: 0 5.2%;
+}

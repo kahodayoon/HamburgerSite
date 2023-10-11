@@ -5,33 +5,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Hamburger</title>
     <meta name="description" content="ハンバーガーサイト" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
     <header class="l-header wrapper">
-      <h1 class="l-header__logo">Hamburger</h1>
-      <div class="l-header__seach">
-        <input class="l-header__seach_input" type="text" />
-        <button class="l-header__seach_button">検索</button>
-      </div>
-      <div class="l-header__menu">
+      <h1 class="c-header-logo u-mb-large">Hamburger</h1>
+      <form method="get" action="#" class="c-search_container u-mb-large">
+        <div class="c-search_container__text">
+          <input type="text" size="25" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input class="c-search_container__button" type="submit" value="検索" />
+      </form>
+      <div class="c-menu">
         Menu
-        <nav class="l-header__menu_nav">
+        <nav class="c-menu__nav">
           <ul>
             <li></li>
           </ul>
         </nav>
       </div>
+      <main class="l-main">
+        <div class="c-main-visual">
+          <h2 class="c-main-visual__title">ダミーサイト</h2>
+        </div>
+      </main>
     </header>
+    <script src="https://kit.fontawesome.com/92cec73944.js" crossorigin="anonymous"></script>
   </body>
 </html>

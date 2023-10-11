@@ -1,0 +1,32 @@
+@use '../foundation/base' as *;
+.c-search_container {
+  display: flex;
+  justify-content: center;
+  .c-search_container__text {
+    background-color: $main-bk-color;
+    height: 46px;
+    border: solid 1px #808080;
+    border-radius: 10px;
+    margin-right: 16px; //4.2%
+    position: relative;
+    .fa-magnifying-glass::before {
+      position: absolute;
+      top: 7px;
+      left: 8px;
+      content: '\f002';
+      font-family: 'Font Awesome 5 Free';
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 900;
+    }
+  }
+  .c-search_container__button {
+    display: inline-block;
+    width: 90px;
+    line-height: 46px;
+    background-color: #f2ede9;
+    border: solid 1px #707070;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+}

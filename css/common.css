@@ -4,6 +4,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "M PLUS 1", sans-serif;
   font-family: "Roboto", sans-serif;
   color: #3c2a10;
   background-color: #fff;
@@ -28,16 +29,69 @@ li {
 }
 
 .l-header {
-  padding-top: 9.5px;
   text-align: center;
   height: 215px;
   background-color: #fff7ef;
+  position: relative;
+  color: #707070;
 }
 
-.l-header__logo {
+.c-search_container {
+  display: flex;
+  justify-content: center;
+}
+.c-search_container .c-search_container__text {
+  background-color: #fff;
+  height: 46px;
+  border: solid 1px #808080;
+  border-radius: 10px;
+  margin-right: 16px;
+  position: relative;
+}
+.c-search_container .c-search_container__text .fa-magnifying-glass::before {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+}
+.c-search_container .c-search_container__button {
+  display: inline-block;
+  width: 90px;
+  line-height: 46px;
+  background-color: #f2ede9;
+  border: solid 1px #707070;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.c-menu {
+  position: absolute;
+  top: 2.2%;
+  right: 2.2%;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c-header-logo {
   font-size: 4rem;
   font-weight: bold;
-  color: #707070;
   padding-top: 43px;
+}
+
+.u-mb {
+  margin-bottom: 30px;
+}
+
+.u-mb-small {
+  margin-bottom: 20px;
+}
+
+.u-mb-large {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=common.css.map */
