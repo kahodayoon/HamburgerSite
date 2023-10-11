@@ -1,12 +1,8 @@
+@use '../foundation/base' as *;
 .l-header {
-  padding-top: 9.5px;
   text-align: center;
   height: 215px;
-  background-color: #fff7ef;
-}
-.l-header__logo {
-  font-size: 4rem;
-  font-weight: bold;
+  background-color: $top-bk-color;
+  position: relative;
   color: #707070;
-  padding-top: 43px;
 }
