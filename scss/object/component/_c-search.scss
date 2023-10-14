@@ -1,5 +1,5 @@
 @use '../../foundation/base' as *;
-
+//虫眼鏡のアイコン
 .c-icon--loupe::before {
   content: '\f002';
   font-size: 3rem;
@@ -8,6 +8,7 @@
   font-style: normal;
   font-size: 3rem;
 }
+//ボタン
 .c-button {
   display: inline-block;
   background-color: #f2ede9;

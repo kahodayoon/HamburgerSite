@@ -1,28 +1,41 @@
 @use '../../foundation/base' as *;
+//グーグルマップのスクショ背景
 .p-map {
   background-image: url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   background-size: cover;
+  //長いグレー背景
   .p-map__layer {
     width: 100%;
     height: 691px;
     background-color: rgba(0, 0, 0, 0.2);
+    //短いグレー背景
     .p-map__layer__black {
       width: 100%;
       height: 415px;
       background-color: rgba(0, 0, 0, 0.2);
     }
   }
+
+  //フォント
   .p-map__text-box {
     padding: 42px 8%;
-    .c-map-title-font {
-      padding-bottom: 20px;
-    }
-    .c-section-border {
+    .p-map__border {
       width: 75px;
       height: 2px;
       background-color: #fff;
     }
-    .c-map-text-font {
+    .p-map__title-font {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      font-family: $font-jp;
+      padding-bottom: 20px;
+    }
+    .p-map__text-font {
+      font-size: 1.4rem;
+      color: #fff;
+      font-family: $font-jp;
+      font-weight: bold;
       padding-top: 20px;
       line-height: 30px;
     }

@@ -1,9 +1,11 @@
 @use '../../foundation/base' as *;
+//ヘッダーの検索ボックス
 .p-search-box {
   display: flex;
   justify-content: center;
   .p-search-box__text {
     position: relative;
+    //検索欄
     .c-input-text {
       background-color: $main-bk-color; //base.$main-bk-color
       height: 46px;
@@ -11,12 +13,14 @@
       border-radius: 10px;
       margin-right: 16px; //4.2%
     }
+    //虫眼鏡アイコンの大きさ
     .c-icon--loupe::before {
       position: absolute;
       top: 7px;
       left: 10px;
     }
   }
+  //検索ボタン
   .c-button {
     width: 90px;
     line-height: 46px;
