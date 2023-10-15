@@ -53,6 +53,11 @@ li {
   height: 691px;
 }
 
+.l-footer {
+  height: 150px;
+  background-image: url(../../img/layer1.jpg);
+}
+
 .c-icon--loupe::before {
   content: "\f002";
   font-size: 3rem;
@@ -92,6 +97,21 @@ li {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.c-info {
+  padding-top: 16px;
+  color: #ffffff;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.c-copyright {
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding-top: 70px;
+  text-align: center;
 }
 
 .p-search-box {
