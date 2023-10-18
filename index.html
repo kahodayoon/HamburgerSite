@@ -16,24 +16,54 @@
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
+    
     <header class="l-header wrapper">
       <h1 class="c-header-logo u-mb-large">Hamburger</h1>
       <form method="get" action="#" class="p-search-box u-mb-large">
         <div class="p-search-box__text">
-          <input class="c-input-text" type="text" size="25" />
+          <input class="c-input-text" type="text" size="20" />
           <i class="c-icon--loupe"></i>
         </div>
         <input class="c-button" type="submit" value="検索" />
       </form>
-      <div class="c-menu">
-        Menu
-        <nav class="c-menu__nav">
-          <ul>
-            <li></li>
-          </ul>
-        </nav>
-      </div>
     </header>
+    <div class="l-aside">
+      <div class="c-menu">Menu</div>           
+      <nav class="p-foodmenu">
+        <button class="c-menu--close"">
+          <span class="c-menu--close__bar"></span>
+          <span class="c-menu--close__bar"></span>
+        </button>
+        <ul>
+          <li class="p-foodmenu__list1"><a href="#">バーガー</a></li>
+          <ul>
+            <li class="p-foodmenu__list2"><a href="#">ハンバーガー</a></li>
+            <li class="p-foodmenu__list2"><a href="#">チーズバーガー</a></li>
+            <li class="p-foodmenu__list2"><a href="#">テリヤキバーガー</a></li>
+            <li class="p-foodmenu__list2"><a href="#">アボカドバーガー</a></li>
+            <li class="p-foodmenu__list2"><a href="#">フィッシュバーガー</a></li>
+            <li class="p-foodmenu__list2"><a href="#">ベーコンバーガー</a></li>
+          </ul>
+          <li class="p-foodmenu__list1"><a href="#">サイド</a></li>
+          <ul class="p-foodmenu__ul">
+            <li class="p-foodmenu__list2"><a href="#">ポテト</a></li>
+            <li class="p-foodmenu__list2"><a href="#">サラダ</a></li>
+            <li class="p-foodmenu__list2"><a href="#">ナゲット</a></li>
+            <li class="p-foodmenu__list2"><a href="#">コーン</a></li>
+          </ul>
+          <li class="p-foodmenu__list1"><a href="#">ドリンク</a></li>
+          <ul class="p-foodmenu__ul">
+            <li class="p-foodmenu__list2"><a href="#">コーラ</a></li>
+            <li class="p-foodmenu__list2"><a href="#">ファンタ</a></li>
+            <li class="p-foodmenu__list2"><a href="#">オレンジ</a></li>
+            <li class="p-foodmenu__list2"><a href="#">アップル</a></li>
+            <li class="p-foodmenu__list2"><a href="#">紅茶（Ice/Hot）</a></li>
+            <li class="p-foodmenu__list2"><a href="#">コーヒー（Ice/Hot）</a></li>
+          </ul>
+        </ul>
+      </nav>
+      <div class="p-foodmenu--background"> </div> <!--backgroundのdiv-->
+    </div>
     <div class="l-main p-main-visual">
       <h2 class="c-main-font wrapper">ダミーサイト</h2>
     </div>
@@ -41,54 +71,60 @@
       <section class="p-section--TakeOut">
         <h2 class="p-section__title-font">Take Out</h2>
         <div class="p-section__border"></div>
-        <div class="p-section__box p-box1">
-          <h3 class="p-section__sub-font">Take OUT</h3>
-          <p class="p-section__text-font">
-            当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
-          </p>
-        </div>
-        <div class="p-section__box p-box2">
-          <h3 class="p-section__sub-font">Take OUT</h3>
-          <p class="p-section__text-font">
-            当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
-          </p>
+        <div class="p-section__box">
+          <div class="p-box1">
+            <h3 class="p-section__sub-font">Take OUT</h3>
+            <p class="p-section__text-font">
+              当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+            </p>
+          </div>
+          <div class="p-box2">
+            <h3 class="p-section__sub-font">Take OUT</h3>
+            <p class="p-section__text-font">
+              当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+            </p>
+          </div>
         </div>
       </section>
       <section class="p-section--EatIn">
         <h2 class="p-section__title-font">Eat In</h2>
         <div class="p-section__border"></div>
-        <div class="p-section__box p-box1">
-          <h3 class="p-section__sub-font">Eat In</h3>
-          <p class="p-section__text-font">
-            店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-          </p>
-        </div>
-        <div class="p-section__box p-box2">
-          <h3 class="p-section__sub-font">Eat In</h3>
-          <p class="p-section__text-font">
-            店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-          </p>
+        <div class="p-section__box">
+          <div class="p-box1">
+            <h3 class="p-section__sub-font">Eat In</h3>
+            <p class="p-section__text-font">
+              店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+            </p>
+          </div>
+          <div class="p-box2">
+            <h3 class="p-section__sub-font">Eat In</h3>
+            <p class="p-section__text-font">
+              店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+            </p>
+          </div>
         </div>
       </section>
     </div>
     <div class="l-map p-map">
       <div class="p-map__layer">
-        <div class="p-map__layer__black">
-          <div class="p-map__text-box">
-            <h2 class="p-map__title-font">見出しが入ります</h2>
-            <div class="p-map__border"></div>
-            <p class="p-map__text-font">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-            </p>
-          </div>
+        <div class="p-map__layer__black"></div>
+        <div class="p-map__text-box">
+          <h2 class="p-map__title-font">見出しが入ります</h2>
+          <div class="p-map__border"></div>
+          <p class="p-map__text-font">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
         </div>
       </div>
     </div>
     <footer class="l-footer">
-      <p class="c-info">ショップ情報<span>  |  </span>ヒストリー</p>
+      <p class="c-info">ショップ情報<span> | </span>ヒストリー</p>
       <p class="c-copyright">Copyright: RaiseTech</p>
     </footer>
-
+ 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/92cec73944.js" crossorigin="anonymous"></script>
+    
+    <script src="./script.js"></script>
   </body>
 </html>

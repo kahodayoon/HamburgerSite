@@ -6,6 +6,7 @@ $top-bk-color:#fff7ef;
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
   font-size: 1.6rem;
@@ -13,6 +14,8 @@ body {
   font-family: $font-en;
   color: #3c2a10;
   background-color: $main-bk-color;
+  height: 100%;
+  position: relative;
 }
 a {
   text-decoration: none;

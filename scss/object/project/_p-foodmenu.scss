@@ -1,0 +1,55 @@
+@use '../../foundation/base' as *;
+//レイヤーの黒い背景
+.p-foodmenu--background {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%; //画面分の高さになってしまう。サイト下まで伸ばしたい。
+  background-color: #000;
+  transition: ease 0.5s;
+}
+.p-foodmenu--background.open {
+  right: 0;
+}
+//メニュー一覧
+.p-foodmenu {
+  position: fixed;
+  height: 100%;  //スクロールさせるための高さ指定
+  overflow-y: scroll; //Fixedしたものをスクロールさせる。
+  z-index: 100;
+  background-color: #f2ede9;
+  top: 0;
+  right: -100%;
+  width: 87%;
+  transition: ease 0.5s;
+
+  > ul {
+    padding-top: 100px;
+    padding-left: 12%;
+    margin-bottom: 100%; //サイト下まで伸ばしたいけど無理。
+  }
+}
+.p-foodmenu.open {
+  right: 0;
+}
+
+//バーガー、サイド、ドリンクのフォント
+.p-foodmenu__list1 {
+  display: block;
+  font-size: 2.4rem;
+  font-family: $font-jp;
+  font-weight: bold;
+  color: #707070;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+//チーズバーガー、ポテトなどのフォント
+.p-foodmenu__list2 {
+  display: block;
+  font-size: 2rem;
+  font-family: $font-jp;
+  color: #707070;
+  padding: 10px;
+}

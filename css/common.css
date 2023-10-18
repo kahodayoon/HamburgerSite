@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: #3c2a10;
   background-color: #fff;
+  height: 100%;
+  position: relative;
 }
 
 a {
@@ -50,7 +53,6 @@ li {
 
 .l-map {
   width: 100%;
-  height: 691px;
 }
 
 .l-footer {
@@ -81,6 +83,32 @@ li {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
+  color: #707070;
+}
+
+.c-menu--close {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  z-index: 200;
+}
+
+.c-menu--close__bar {
+  display: block;
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  background: #707070;
+}
+.c-menu--close__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.c-menu--close__bar:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 .c-header-logo {
@@ -127,6 +155,8 @@ li {
   border: solid 1px #808080;
   border-radius: 10px;
   margin-right: 16px;
+  text-align: left;
+  padding-left: 50px;
 }
 .p-search-box .p-search-box__text .c-icon--loupe::before {
   position: absolute;
@@ -146,7 +176,6 @@ li {
 
 .p-section--TakeOut {
   background-image: url(../../../img/TakeOut.jpg);
-  height: 642px;
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
@@ -154,7 +183,6 @@ li {
 
 .p-section--EatIn {
   background-image: url(../../../img/EatIn.jpg);
-  height: 642px;
   background-size: cover;
   position: relative;
 }
@@ -178,33 +206,34 @@ li {
   color: #3c2a10;
   font-size: 2.2rem;
   font-weight: bold;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 
 .p-section__text-font {
   color: #3c2a10;
   font-size: 1.6rem;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .p-section__box {
-  width: 90%;
-  height: 156px;
-  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 200px;
+  padding-bottom: 15px;
 }
 
 .p-box1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .p-box2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 186px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .p-map {
@@ -213,36 +242,95 @@ li {
 }
 .p-map .p-map__layer {
   width: 100%;
-  height: 691px;
-  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.p-map .p-map__layer .p-map__layer__black {
+.p-map .p-map__layer__black {
+  position: absolute;
   width: 100%;
-  height: 415px;
+  height: 30%;
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
 }
-.p-map .p-map__text-box {
+
+.p-map__text-box {
+  position: relative;
+  z-index: 10;
   padding: 42px 8%;
 }
-.p-map .p-map__text-box .p-map__border {
+.p-map__text-box .p-map__border {
   width: 75px;
   height: 2px;
   background-color: #fff;
 }
-.p-map .p-map__text-box .p-map__title-font {
+.p-map__text-box .p-map__title-font {
   font-size: 3rem;
   font-weight: bold;
   color: #fff;
   font-family: "M PLUS 1", sans-serif;
   padding-bottom: 20px;
 }
-.p-map .p-map__text-box .p-map__text-font {
+.p-map__text-box .p-map__text-font {
   font-size: 1.4rem;
   color: #fff;
   font-family: "M PLUS 1", sans-serif;
   font-weight: bold;
   padding-top: 20px;
   line-height: 30px;
+}
+
+.p-foodmenu--background {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: ease 0.5s;
+}
+
+.p-foodmenu--background.open {
+  right: 0;
+}
+
+.p-foodmenu {
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 100;
+  background-color: #f2ede9;
+  top: 0;
+  right: -100%;
+  width: 87%;
+  transition: ease 0.5s;
+}
+.p-foodmenu > ul {
+  padding-top: 100px;
+  padding-left: 12%;
+  margin-bottom: 100vh;
+}
+
+.p-foodmenu.open {
+  right: 0;
+}
+
+.p-foodmenu__list1 {
+  display: block;
+  font-size: 2.4rem;
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+  color: #707070;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.p-foodmenu__list2 {
+  display: block;
+  font-size: 2rem;
+  font-family: "M PLUS 1", sans-serif;
+  color: #707070;
+  padding: 10px;
 }
 
 .u-mb {
