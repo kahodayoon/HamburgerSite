@@ -1,18 +1,35 @@
 @use '../../foundation/base' as *;
 //レイヤーの黒い背景
 .p-foodmenu--background {
+  visibility:hidden;
   position: fixed;
   z-index: 50;
   top: 0;
-  right: -100%;
+  right: 0;
   width: 100%;
   height: 100%; //画面分の高さになってしまう。サイト下まで伸ばしたい。
   background-color: #000;
-  transition: ease 0.5s;
+  &.open {
+    visibility: visible;
+    animation-duration: 0.5s;
+    animation-name: fade-in;
+  }
 }
-.p-foodmenu--background.open {
-  right: 0;
+@keyframes fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
+
 //メニュー一覧
 .p-foodmenu {
   position: fixed;
@@ -28,7 +45,7 @@
   > ul {
     padding-top: 100px;
     padding-left: 12%;
-    margin-bottom: 100%; //サイト下まで伸ばしたいけど無理。
+    margin-bottom: 160px; 
   }
 }
 .p-foodmenu.open {
@@ -52,4 +69,7 @@
   font-family: $font-jp;
   color: #707070;
   padding: 10px;
+ &:first-child {
+  margin-top: 40px;
+ }
 }

@@ -280,20 +280,52 @@ li {
 }
 
 .p-foodmenu--background {
+  visibility: hidden;
   position: fixed;
   z-index: 50;
   top: 0;
-  right: -100%;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: #000;
-  transition: ease 0.5s;
 }
-
 .p-foodmenu--background.open {
-  right: 0;
+  visibility: visible;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .p-foodmenu {
   position: fixed;
   height: 100%;
@@ -308,7 +340,7 @@ li {
 .p-foodmenu > ul {
   padding-top: 100px;
   padding-left: 12%;
-  margin-bottom: 100vh;
+  margin-bottom: 160px;
 }
 
 .p-foodmenu.open {
@@ -331,6 +363,9 @@ li {
   font-family: "M PLUS 1", sans-serif;
   color: #707070;
   padding: 10px;
+}
+.p-foodmenu__list2:first-child {
+  margin-top: 40px;
 }
 
 .u-mb {
