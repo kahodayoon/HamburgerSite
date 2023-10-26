@@ -1,7 +1,7 @@
 @use '../../foundation/base' as *;
 //レイヤーの黒い背景
 .p-foodmenu--background {
-  visibility:hidden;
+  visibility: hidden;
   position: fixed;
   z-index: 50;
   top: 0;
@@ -9,11 +9,14 @@
   width: 100%;
   height: 100%; //画面分の高さになってしまう。サイト下まで伸ばしたい。
   background-color: #000;
-  &.open {
-    visibility: visible;
-    animation-duration: 0.5s;
-    animation-name: fade-in;
+  @include pc {
+    display: none;
   }
+}
+.p-foodmenu--background.open {
+  visibility: visible;
+  animation-duration: 0.5s;
+  animation-name: fade-in;
 }
 @keyframes fade-in {
   0% {
@@ -29,11 +32,28 @@
     opacity: 1;
   }
 }
-
+//Menuの文字
+.p-foodmenu-title--sp {
+  position: absolute;
+  top: 2.2%; //8px
+  right: 2.2%; //8px
+  @include pc {
+    display: none;
+  }
+}
+.p-foodmenu-title--pc {
+  display: none;
+  @include pc {
+    display: block;
+    position: relative;
+    padding-left: 12%;
+    padding-top: 84px;
+  }
+}
 //メニュー一覧
 .p-foodmenu {
   position: fixed;
-  height: 100%;  //スクロールさせるための高さ指定
+  height: 100%; //スクロールさせるための高さ指定
   overflow-y: scroll; //Fixedしたものをスクロールさせる。
   z-index: 100;
   background-color: #f2ede9;
@@ -41,11 +61,23 @@
   right: -100%;
   width: 87%;
   transition: ease 0.5s;
+  @include tab {
+    width: 44%;
+  }
+  @include pc {
+    position: inherit;
+    width: 100%;
+    height: auto;
+  }
 
   > ul {
     padding-top: 100px;
     padding-left: 12%;
-    margin-bottom: 160px; 
+    margin-bottom: 160px;
+    @include pc {
+      margin-bottom: 0;
+      padding-top: 30px;
+    }
   }
 }
 .p-foodmenu.open {
@@ -61,6 +93,10 @@
   color: #707070;
   padding-top: 60px;
   padding-bottom: 40px;
+  @include pc {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
 }
 //チーズバーガー、ポテトなどのフォント
 .p-foodmenu__list2 {
@@ -69,7 +105,10 @@
   font-family: $font-jp;
   color: #707070;
   padding: 10px;
- &:first-child {
-  margin-top: 40px;
- }
+  &:first-child {
+    margin-top: 40px;
+    @include pc {
+      margin-top: 30px;
+    }
+  }
 }

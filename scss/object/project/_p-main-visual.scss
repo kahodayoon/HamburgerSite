@@ -3,6 +3,10 @@
 .p-main-visual {
   background-image: url(../../../../img/main-visual.jpg);
   background-size: cover;
+  background-position: center;
+  @include pc {
+    background-image: url(../../../img/mainvisual-pc.jpg);
+  }
 }
 
 

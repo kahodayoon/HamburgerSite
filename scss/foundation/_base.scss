@@ -4,6 +4,19 @@ $font-en: 'Roboto', sans-serif;
 $main-bk-color:#fff;
 $top-bk-color:#fff7ef;
 
+$tab: 500px; //Figmaのサイズは834px
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+$pc: 1000px; //Figmaのサイズは1920px
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
 html {
   font-size: 62.5%;
   height: 100%;

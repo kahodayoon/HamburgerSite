@@ -5,4 +5,9 @@
   background-color: $top-bk-color;
   position: relative;
   color: #707070;
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

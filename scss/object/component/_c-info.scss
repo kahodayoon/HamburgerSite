@@ -5,4 +5,7 @@
   font-family: $font-jp;
   font-size: 1.8rem;
   text-align: center;
+  @include tab {
+    padding-top: 30px;
+  }
 }
