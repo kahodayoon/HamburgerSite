@@ -1,38 +1,39 @@
 @use '../../foundation/base' as *;
 //レイヤーの黒い背景
 .p-foodmenu--background {
-  visibility: hidden;
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%; //画面分の高さになってしまう。サイト下まで伸ばしたい。
+  // visibility: hidden;
+  // position: fixed;
+  // z-index: 50;
+  // top: 0;
+  // right: 0;
+  // width: 100%;
+  // height: 100%; //画面分の高さになってしまう。サイト下まで伸ばしたい。
   background-color: #000;
-  @include pc {
-    display: none;
-  }
+  // @include pc {
+  //   display: none;
+  // }
 }
-.p-foodmenu--background.open {
-  visibility: visible;
-  animation-duration: 0.5s;
-  animation-name: fade-in;
-}
-@keyframes fade-in {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  50% {
-    visibility: visible;
-    opacity: 0.5;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-//Menuの文字
+// .p-foodmenu--background.open {
+//   visibility: visible;
+//   animation-duration: 0.5s;
+//   animation-name: fade-in;
+// }
+// @keyframes fade-in {
+//   0% {
+//     visibility: hidden;
+//     opacity: 0;
+//   }
+//   50% {
+//     visibility: visible;
+//     opacity: 0.5;
+//   }
+//   100% {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+// }
+
+//Menuの文字  
 .p-foodmenu-title--sp {
   position: absolute;
   top: 2.2%; //8px
@@ -52,23 +53,23 @@
 }
 //メニュー一覧
 .p-foodmenu {
-  position: fixed;
-  height: 100%; //スクロールさせるための高さ指定
-  overflow-y: scroll; //Fixedしたものをスクロールさせる。
-  z-index: 100;
-  background-color: #f2ede9;
-  top: 0;
-  right: -100%;
+  // position: fixed;
+  // height: 100%; //スクロールさせるための高さ指定
+  // overflow-y: scroll; //Fixedしたものをスクロールさせる。
+  // z-index: 100;
+  // background-color: #f2ede9;
+  // top: 0;
+  // right: -100%;
   width: 87%;
-  transition: ease 0.5s;
+  // transition: ease 0.5s;
   @include tab {
     width: 44%;
   }
-  @include pc {
-    position: inherit;
-    width: 100%;
-    height: auto;
-  }
+  // @include pc {
+  //   position: inherit;
+  //   width: 100%;
+  //   height: auto;
+  // }
 
   > ul {
     padding-top: 100px;
@@ -80,9 +81,9 @@
     }
   }
 }
-.p-foodmenu.open {
-  right: 0;
-}
+// .p-foodmenu.open {
+//   right: 0;
+// }
 
 //バーガー、サイド、ドリンクのフォント
 .p-foodmenu__list1 {
