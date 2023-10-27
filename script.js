@@ -13,11 +13,11 @@ $(function () {
   //   $('.p-foodmenu--background').removeClass('open');
   // });
   $('.js-foodmenu-title--sp').click(function () {
-    $('.js-foodmenu').toggleClass('.is-open');
-    $('.js-foodmenu--background').toggleClass('.is-open');
+    $('.js-foodmenu').toggleClass('is-open');
+    $('.js-foodmenu--background').toggleClass('is-open');
   });
   $('.js-foodmenu--close').click(function () {
-    $('.js-foodmenu').toggleClass('.is-open');
-    $('.js-foodmenu--background').toggleClass('.is-open');
+    $('.js-foodmenu').toggleClass('is-open');
+    $('.js-foodmenu--background').toggleClass('is-open');
   });
 });

@@ -508,7 +508,7 @@ li {
   margin-bottom: 40px;
 }
 
-.je-foodmenu--background {
+.js-foodmenu--background {
   visibility: hidden;
   position: fixed;
   z-index: 50;
@@ -518,7 +518,7 @@ li {
   height: 100%;
 }
 @media (min-width: 1000px) {
-  .je-foodmenu--background {
+  .js-foodmenu--background {
     display: none;
   }
 }
