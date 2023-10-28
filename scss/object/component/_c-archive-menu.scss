@@ -1,0 +1,12 @@
+@use '../../foundation/base' as *;
+.c-archive-menu__title {
+  font-size: 2rem;
+  font-family: $font-jp;
+  font-weight: bold;
+}
+
+.c-archive-menu__sub-title {
+  font-size: 1.6rem;
+  font-family: $font-jp;
+  font-weight: bold;
+}

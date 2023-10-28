@@ -1,6 +1,9 @@
 //projectディレクトリに追加したscssファイルを追記する
 @use 'p-search-box';
 @use 'p-main-visual';
+@use 'p-archive-visual';
+@use 'p-archive-section';
+@use 'p-archive-menu';
 @use 'p-section';
 @use 'p-map';
 @use 'p-foodmenu';

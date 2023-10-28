@@ -8,6 +8,7 @@
   position: relative;
   @include tab {
     margin-bottom: 0;
+    width: 50%;
   }
 }
 //EatInの背景
@@ -15,6 +16,9 @@
   background-image: url(../../../img/EatIn.jpg);
   background-size: cover;
   position: relative;
+  @include tab {
+    width: 50%;
+  }
 }
 
 //section共通のフォント

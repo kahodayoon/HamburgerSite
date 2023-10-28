@@ -1,5 +1,8 @@
 @use '../foundation/base' as *;
 .l-main-contents {
+  display: block;
+  @include pc {
   display: flex;
   flex-direction: row-reverse;
+  }
 }

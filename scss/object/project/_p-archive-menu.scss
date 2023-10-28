@@ -1,0 +1,22 @@
+@use '../../foundation/base' as *;
+.p-archive-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.p-archive-menu__image {
+  width: 100%;
+}
+.p-archive-menu__textbox {
+  background-color: $archive-bk-color;
+  color: #ffffff;
+  padding: 40px 5%;
+  .c-archive-menu__title {
+    padding-bottom: 20px;
+  }
+  .c-archive-menu__text {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}

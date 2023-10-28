@@ -95,8 +95,18 @@ li {
 }
 
 .l-main-contents {
-  display: flex;
-  flex-direction: row-reverse;
+  display: block;
+}
+@media (min-width: 1000px) {
+  .l-main-contents {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.l-archive-section {
+  padding-top: 20px;
+  padding-bottom: 49px;
 }
 
 .c-icon--loupe::before {
@@ -183,6 +193,19 @@ li {
   }
 }
 
+.c-archive-font--main {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.c-archive-font--sub {
+  font-size: 1.6rem;
+  font-family: "M PLUS 1", sans-serif;
+  color: #fff;
+}
+
 .c-info {
   padding-top: 16px;
   color: #ffffff;
@@ -201,6 +224,36 @@ li {
   font-size: 1.4rem;
   padding-top: 70px;
   text-align: center;
+}
+
+.c-archive-title {
+  font-size: 2.8rem;
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+}
+
+.c-archive-menu__title {
+  font-size: 2rem;
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+}
+
+.c-archive-menu__sub-title {
+  font-size: 1.6rem;
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+}
+
+.c-archive-button {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  border: #707070;
+  border-radius: 30px;
+  color: #707070;
+  cursor: pointer;
 }
 
 .p-search-box {
@@ -270,6 +323,68 @@ li {
   }
 }
 
+.p-archive-visual {
+  background-image: url(../../../../img/archive-visual.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1000px) {
+  .p-archive-visual {
+    background-image: url(../../../img/archive-visual-pc.jpg);
+  }
+}
+
+.p-archive-visual__layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.p-archive-visual__text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 500px) {
+  .p-archive-visual__text {
+    padding: 0 10%;
+  }
+}
+.p-archive-visual__text .c-archive-font--main {
+  padding-bottom: 12px;
+}
+
+.p-archive-section--main {
+  padding: 12px 0;
+}
+.p-archive-section--main .c-archive-title {
+  padding-bottom: 25px;
+}
+
+.p-archive-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.p-archive-menu__image {
+  width: 100%;
+}
+
+.p-archive-menu__textbox {
+  background-color: #3C2B1C;
+  color: #ffffff;
+  padding: 40px 5%;
+}
+.p-archive-menu__textbox .c-archive-menu__title {
+  padding-bottom: 20px;
+}
+.p-archive-menu__textbox .c-archive-menu__text {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
 .p-section--TakeOut {
   background-image: url(../../../img/TakeOut.jpg);
   background-size: cover;
@@ -279,6 +394,7 @@ li {
 @media (min-width: 500px) {
   .p-section--TakeOut {
     margin-bottom: 0;
+    width: 50%;
   }
 }
 
@@ -286,6 +402,11 @@ li {
   background-image: url(../../../img/EatIn.jpg);
   background-size: cover;
   position: relative;
+}
+@media (min-width: 500px) {
+  .p-section--EatIn {
+    width: 50%;
+  }
 }
 
 .p-section__title-font {
@@ -516,6 +637,10 @@ li {
   right: 0;
   width: 100%;
   height: 100%;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
 }
 @media (min-width: 1000px) {
   .js-foodmenu--background {
@@ -523,6 +648,35 @@ li {
   }
 }
 
+@-webkit-keyframes fade-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 .js-foodmenu--background.is-open {
   visibility: visible;
   -webkit-animation-duration: 0.5s;
