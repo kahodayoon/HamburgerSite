@@ -1,5 +1,6 @@
 $(function () {
   $('.js-foodmenu-title--sp').click(function () {
+    console.log('クリックされたよ！');
     $('.js-foodmenu').toggleClass('is-open');
     $('.js-foodmenu--background').toggleClass('is-open');
   });
