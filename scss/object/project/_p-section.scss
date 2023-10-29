@@ -1,11 +1,16 @@
 @use '../../foundation/base' as *;
 //コンテンツ
+.p-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+}
 //TakeOutの背景
 .p-section--TakeOut {
+  @extend .p-section;
   background-image: url(../../../img/TakeOut.jpg);
-  background-size: cover;
   margin-bottom: 15px;
-  position: relative;
   @include tab {
     margin-bottom: 0;
     width: 50%;
@@ -13,9 +18,8 @@
 }
 //EatInの背景
 .p-section--EatIn {
+  @extend .p-section;
   background-image: url(../../../img/EatIn.jpg);
-  background-size: cover;
-  position: relative;
   @include tab {
     width: 50%;
   }
@@ -57,10 +61,9 @@
 .p-section__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 15px;
   padding-top: 200px;
-  padding-bottom: 15px;
+  padding-bottom: 5%;
   @include tab {
     padding-top: 250px;
   }
@@ -68,12 +71,8 @@
     padding-top: 660px;
   }
 }
-.p-box1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 90%;
-  margin: 0 auto;
-}
-.p-box2 {
+.p-section__box1,
+.p-section__box2 {
   background-color: rgba(255, 255, 255, 0.8);
   width: 90%;
   margin: 0 auto;

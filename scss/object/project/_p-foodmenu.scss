@@ -1,11 +1,11 @@
 @use '../../foundation/base' as *;
 //レイヤーの黒い背景
 .p-foodmenu--background {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 // レイヤーのアニメーションは_js.scssに記載している。
 
-//Menuの文字  
+//Menuの文字
 .p-foodmenu-title--sp {
   position: absolute;
   top: 2.2%; //8px

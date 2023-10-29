@@ -385,11 +385,16 @@ li {
   padding-bottom: 40px;
 }
 
+.p-section, .p-section--EatIn, .p-section--TakeOut {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+}
+
 .p-section--TakeOut {
   background-image: url(../../../img/TakeOut.jpg);
-  background-size: cover;
   margin-bottom: 15px;
-  position: relative;
 }
 @media (min-width: 500px) {
   .p-section--TakeOut {
@@ -400,8 +405,6 @@ li {
 
 .p-section--EatIn {
   background-image: url(../../../img/EatIn.jpg);
-  background-size: cover;
-  position: relative;
 }
 @media (min-width: 500px) {
   .p-section--EatIn {
@@ -450,10 +453,9 @@ li {
 .p-section__box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 15px;
   padding-top: 200px;
-  padding-bottom: 15px;
+  padding-bottom: 5%;
 }
 @media (min-width: 500px) {
   .p-section__box {
@@ -466,13 +468,8 @@ li {
   }
 }
 
-.p-box1 {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 90%;
-  margin: 0 auto;
-}
-
-.p-box2 {
+.p-section__box1,
+.p-section__box2 {
   background-color: rgba(255, 255, 255, 0.8);
   width: 90%;
   margin: 0 auto;
@@ -539,7 +536,7 @@ li {
 }
 
 .p-foodmenu--background {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .p-foodmenu-title--sp {
