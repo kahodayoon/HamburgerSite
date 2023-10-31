@@ -199,6 +199,11 @@ li {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
+@media (min-width: 1000px) {
+  .c-archive-font--main {
+    font-size: 6rem;
+  }
+}
 
 .c-archive-font--sub {
   font-size: 1.6rem;
@@ -231,11 +236,21 @@ li {
   font-family: "M PLUS 1", sans-serif;
   font-weight: bold;
 }
+@media (min-width: 1000px) {
+  .c-archive-title {
+    font-size: 3.6rem;
+  }
+}
 
 .c-archive-menu__title {
   font-size: 2rem;
   font-family: "M PLUS 1", sans-serif;
   font-weight: bold;
+}
+@media (min-width: 1000px) {
+  .c-archive-menu__title {
+    font-size: 3.6rem;
+  }
 }
 
 .c-archive-menu__sub-title {
@@ -243,17 +258,75 @@ li {
   font-family: "M PLUS 1", sans-serif;
   font-weight: bold;
 }
+@media (min-width: 1000px) {
+  .c-archive-menu__sub-title {
+    font-size: 2.4rem;
+  }
+}
 
 .c-archive-button {
   text-align: center;
   margin: 0 auto;
-  width: 50%;
+  width: 163px;
   padding: 15px 40px;
   background-color: #ffffff;
   border: #707070;
   border-radius: 30px;
   color: #707070;
   cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .c-archive-button {
+    width: 250px;
+    padding: 25px 40px;
+    border-radius: 40px;
+  }
+}
+
+.c-iphonepage-previous,
+.c-iphonepage-next {
+  color: #707070;
+  font-family: "M PLUS 1", sans-serif;
+}
+@media (min-width: 500px) {
+  .c-iphonepage-previous,
+.c-iphonepage-next {
+    display: none;
+  }
+}
+
+.c-tabletpage-number {
+  display: none;
+}
+@media (min-width: 500px) {
+  .c-tabletpage-number {
+    display: block;
+    border: solid 1px #707070;
+    padding: 8px 12.5px;
+  }
+}
+
+@media (min-width: 500px) {
+  .c-tabletpage-number:first-child {
+    color: #ffffff;
+    background-color: #3c2b1c;
+  }
+}
+
+.c-tabletpage-text,
+.c-tabletpage-arrow {
+  display: none;
+}
+@media (min-width: 500px) {
+  .c-tabletpage-text,
+.c-tabletpage-arrow {
+    display: block;
+    padding: 8px 0;
+  }
+}
+
+.c-tabletpage-text {
+  padding-right: 5px;
 }
 
 .p-search-box {
@@ -328,9 +401,14 @@ li {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .p-archive-visual {
     background-image: url(../../../img/archive-visual-pc.jpg);
+  }
+}
+@media (min-width: 1000px) {
+  .p-archive-visual {
+    height: 200px;
   }
 }
 
@@ -351,6 +429,13 @@ li {
     padding: 0 10%;
   }
 }
+@media (min-width: 1000px) {
+  .p-archive-visual__text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .p-archive-visual__text .c-archive-font--main {
   padding-bottom: 12px;
 }
@@ -358,11 +443,16 @@ li {
 .p-archive-section--main {
   padding: 12px 0;
 }
+@media (min-width: 500px) {
+  .p-archive-section--main {
+    padding-bottom: 30px;
+  }
+}
 .p-archive-section--main .c-archive-title {
   padding-bottom: 25px;
 }
 
-.p-archive-menu {
+.p-archive-menu-main {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -370,6 +460,13 @@ li {
 
 .p-archive-menu__image {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 500px) {
+  .p-archive-menu__image {
+    width: 50%;
+  }
 }
 
 .p-archive-menu__textbox {
@@ -377,12 +474,29 @@ li {
   color: #ffffff;
   padding: 40px 5%;
 }
+@media (min-width: 500px) {
+  .p-archive-menu__textbox {
+    width: 50%;
+  }
+}
 .p-archive-menu__textbox .c-archive-menu__title {
   padding-bottom: 20px;
 }
 .p-archive-menu__textbox .c-archive-menu__text {
   padding-top: 10px;
   padding-bottom: 40px;
+}
+@media (min-width: 1000px) {
+  .p-archive-menu__textbox .c-archive-menu__text {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 500px) {
+  .p-archive-menu, .p-archive-menu--specialcheseburger, .p-archive-menu--doublecheseburger, .p-archive-menu--cheseburger {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .p-section, .p-section--EatIn, .p-section--TakeOut {
@@ -611,6 +725,18 @@ li {
 @media (min-width: 1000px) {
   .p-foodmenu__list2:first-child {
     margin-top: 30px;
+  }
+}
+
+.p-pagenavi {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+@media (min-width: 500px) {
+  .p-pagenavi {
+    justify-content: center;
+    gap: 2%;
   }
 }
 

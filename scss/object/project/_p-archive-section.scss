@@ -1,6 +1,9 @@
 @use '../../foundation/base' as *;
 .p-archive-section--main {
   padding: 12px 0;
+  @include tab {
+    padding-bottom: 30px;
+  }
   .c-archive-title {
     padding-bottom: 25px;
   }

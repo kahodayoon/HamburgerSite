@@ -5,6 +5,9 @@
   font-weight: bold;
   color: #fff;
   font-family: $font-en;
+  @include pc {
+    font-size: 6rem;
+  }
 
 }
 
