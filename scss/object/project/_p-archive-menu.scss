@@ -50,3 +50,8 @@
 .p-archive-menu--specialcheseburger {
   @extend .p-archive-menu;
 }
+
+//アーカイブメニューのsearchページ
+.p-archive-menu--product1,.p-archive-menu--product2,.p-archive-menu--product3,.p-archive-menu--product4,.p-archive-menu--product5 {
+  @extend .p-archive-menu;
+}

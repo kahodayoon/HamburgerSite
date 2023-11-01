@@ -8,7 +8,7 @@
     padding: 8px 12.5px;
   }
 }
-.c-tabletpage-number:first-child { //これがなぜか効かない！！
+.c-tabletpage-number:first-of-type {
   @include tab {
     color: #ffffff;
     background-color: #3c2b1c;
@@ -17,11 +17,17 @@
 
 //矢印と「page1/10」の文字
 .c-tabletpage-text,
-.c-tabletpage-arrow {
+.c-tabletpage-arrow--previous,
+.c-tabletpage-arrow--next {
   display: none;
   @include tab {
     display: block;
     padding: 8px 0;
+  }
+}
+.c-tabletpage-arrow--next {
+  @include pc {
+    display: none;
   }
 }
 .c-tabletpage-text {
