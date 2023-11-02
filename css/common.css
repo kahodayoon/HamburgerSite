@@ -313,6 +313,13 @@ li {
   }
 }
 
+@media (min-width: 650px) {
+  .c-tabletpage-number--first {
+    color: #ffffff;
+    background-color: #3c2b1c;
+  }
+}
+
 .c-tabletpage-text,
 .c-tabletpage-arrow--previous,
 .c-tabletpage-arrow--next {
@@ -435,10 +442,6 @@ li {
 @media (min-width: 650px) {
   .p-archive-visual__text {
     padding: 0 10%;
-  }
-}
-@media (min-width: 1000px) {
-  .p-archive-visual__text {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -446,6 +449,11 @@ li {
 }
 .p-archive-visual__text .c-archive-font--main {
   padding-bottom: 12px;
+}
+@media (min-width: 650px) {
+  .p-archive-visual__text .c-archive-font--main {
+    padding-bottom: 0;
+  }
 }
 
 .p-archive-section--main {
