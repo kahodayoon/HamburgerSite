@@ -23,13 +23,19 @@
   transform: translateY(-50%);
   @include tab {
     padding: 0 10%;
-  }
-  @include pc {
     display: flex;
     align-items: center;
     gap: 20px;
   }
+  // @include pc {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 20px;
+  // }
   .c-archive-font--main {
     padding-bottom: 12px;
+    @include tab {
+      padding-bottom:0 ;
+    }
   }
 }

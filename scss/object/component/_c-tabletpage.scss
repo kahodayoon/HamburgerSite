@@ -14,6 +14,12 @@
     background-color: #3c2b1c;
   }
 }
+.c-tabletpage-number--first {
+  @include tab {
+    color: #ffffff;
+    background-color: #3c2b1c;
+  }
+}
 
 //矢印と「page1/10」の文字
 .c-tabletpage-text,
