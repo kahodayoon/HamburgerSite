@@ -1,13 +1,11 @@
 //componentディレクトリに追加したscssファイルを追記する
-@use 'c-search';
+@use 'c-icon';
 @use 'c-menu';
 @use 'c-logo';
 @use 'c-main-font';
-@use 'c-archive-font';
 @use 'c-info';
 @use 'c-copyright';
-@use 'c-archive-title';
-@use 'c-archive-menu';
-@use 'c-archive-button';
 @use 'c-iphonepage';
 @use 'c-tabletpage';
+@use 'c-title-font';
+@use 'c-button';

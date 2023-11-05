@@ -1,5 +1,14 @@
 @use '../../foundation/base' as *;
-.c-archive-button {
+//検索のボタン
+.c-button {
+  display: inline-block;
+  background-color: #f2ede9;
+  border: solid 1px #707070;
+  border-radius: 10px;
+}
+
+//アーカイブページの「詳しく見る」のボタン
+.c-button--archive {
   text-align: center;
   margin: 0 auto;
   width: 163px;
