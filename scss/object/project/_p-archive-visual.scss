@@ -27,12 +27,7 @@
     align-items: center;
     gap: 20px;
   }
-  // @include pc {
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 20px;
-  // }
-  .c-archive-font--main {
+  .c-main-font--archive-large { //修正後にクラス名を変更している。
     padding-bottom: 12px;
     @include tab {
       padding-bottom:0 ;

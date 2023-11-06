@@ -1,4 +1,5 @@
 @use '../foundation/base' as *;
+//PC表示でメニューが右側に来るようにしている。
 .l-main-contents {
   display: block;
   @include pc {

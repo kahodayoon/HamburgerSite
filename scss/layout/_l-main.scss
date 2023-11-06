@@ -1,10 +1,13 @@
 @use '../foundation/base' as *;
+//ヘッダー直下のメインビジュアル部分
 .l-main {
   height: 285px;
   display: flex;
   position: relative;
   @include pc {
-    // height: 18%; //ここを％表示にするとフッターがMapに隠れた位置に出現しておかしい。
     height: 600px;
   }
+}
+.l-main--single {
+  height: 225px;
 }
