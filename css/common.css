@@ -210,7 +210,7 @@ li {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 1000px) {
+@media (min-width: 650px) {
   .c-main-font--single {
     font-size: 6rem;
   }
@@ -316,20 +316,40 @@ li {
 .c-title-sub--h3 {
   font-size: 2.4rem;
 }
+@media (min-width: 650px) {
+  .c-title-sub--h3 {
+    font-size: 2.8rem;
+  }
+}
 
 .c-title-sub--h4 {
   font-size: 2rem;
+}
+@media (min-width: 650px) {
+  .c-title-sub--h4 {
+    font-size: 2.4rem;
+  }
 }
 
 .c-title-sub--h5 {
   font-size: 2rem;
 }
+@media (min-width: 650px) {
+  .c-title-sub--h5 {
+    font-size: 2.4rem;
+  }
+}
 
 .c-title-sub--h6 {
   font-size: 2rem;
 }
+@media (min-width: 650px) {
+  .c-title-sub--h6 {
+    font-size: 2.4rem;
+  }
+}
 
-.c-button {
+.c-button, .c-button--large {
   display: inline-block;
   background-color: #f2ede9;
   border: solid 1px #707070;
@@ -355,15 +375,39 @@ li {
   }
 }
 
+.c-button--large {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+@media (min-width: 650px) {
+  .c-button--large {
+    width: 430px;
+  }
+}
+
 .c-quote {
   background-color: #f5f5f5;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.6rem;
 }
+@media (min-width: 650px) {
+  .c-quote {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .c-quote a {
   border-bottom: 1px solid #4A6C9B;
   color: #4A6C9B;
+}
+@media (min-width: 650px) {
+  .c-quote p + p {
+    padding-top: 60px;
+  }
 }
 
 .c-image--wide {
@@ -374,11 +418,26 @@ li {
   -o-object-position: center bottom;
      object-position: center bottom;
 }
+@media (min-width: 650px) {
+  .c-image--wide {
+    height: 265px;
+  }
+}
+@media (min-width: 1000px) {
+  .c-image--wide {
+    height: 500px;
+  }
+}
 
 .c-image--small {
   width: 42%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (min-width: 1000px) {
+  .c-image--small {
+    width: 45%;
+  }
 }
 
 .c-image--normal {
@@ -388,11 +447,56 @@ li {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (min-width: 1000px) {
+  .c-image--normal {
+    width: 43%;
+  }
+}
 
 .c-image--collection {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.c-code {
+  padding: 50px;
+  background-color: #f5f5f5;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.c-table {
+  border: 1px solid #707070;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.c-table__td1 {
+  border: 1px solid #707070;
+  padding: 30px 0 30px 30px;
+  width: 46%;
+}
+@media (min-width: 650px) {
+  .c-table__td1 {
+    width: 30%;
+  }
+}
+
+.c-table__td2 {
+  border: 1px solid #707070;
+  width: 54%;
+  padding: 30px 0 30px 30px;
+}
+@media (min-width: 650px) {
+  .c-table__td2 {
+    width: 70%;
+  }
+}
+
+.c-bold {
+  font-weight: bold;
 }
 
 .p-search-box {
@@ -841,6 +945,7 @@ li {
 @media (min-width: 650px) {
   .p-single-visual {
     background-image: url(../../../img/hamburger-with-vegetables-tab.jpg);
+    height: 500px;
   }
 }
 @media (min-width: 1000px) {
@@ -859,6 +964,13 @@ li {
 }
 .p-introduction .c-title-font {
   padding-bottom: 25px;
+}
+@media (min-width: 650px) {
+  .p-introduction .c-title-font {
+    font-size: 3.6rem;
+    padding-bottom: 55px;
+    padding-top: 40px;
+  }
 }
 
 .p-introduction--product {
@@ -884,10 +996,27 @@ li {
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+@media (min-width: 650px) {
+  .p-introduction--collection {
+    margin-top: 240px;
+  }
+}
+@media (min-width: 1000px) {
+  .p-introduction--collection {
+    margin-top: 0;
+  }
+}
 
 .p-list {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+@media (min-width: 650px) {
+  .p-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 7%;
+  }
 }
 
 .p-list__list2 {
@@ -909,6 +1038,11 @@ li {
 
 .u-mb {
   margin-bottom: 30px;
+}
+@media (min-width: 650px) {
+  .u-mb {
+    margin-bottom: 60px;
+  }
 }
 
 .u-mb-small {

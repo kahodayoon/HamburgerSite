@@ -2,6 +2,11 @@
 .p-list {
   padding-top: 30px;
   padding-bottom: 30px;
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 7%;
+  }
 }
 
 .p-list__list2 {

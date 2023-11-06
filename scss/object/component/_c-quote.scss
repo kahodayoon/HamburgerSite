@@ -4,8 +4,17 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.6rem;
+  @include tab {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   a {
     border-bottom:1px solid #4A6C9B;
     color: #4A6C9B;
+  }
+  p + p {
+    @include tab {
+      padding-top: 60px;
+    }
   }
 }
