@@ -66,3 +66,9 @@
 .js-foodmenu.is-open {
   right: 0;
 }
+
+//メニューを開いた時に背景がスクロールしないように指定
+.js-body.is-open {
+  height: 100%;
+  overflow: hidden;
+}

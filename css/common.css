@@ -58,7 +58,7 @@ li {
   }
 }
 
-.l-main--single {
+.l-main--visual {
   height: 225px;
 }
 
@@ -1181,5 +1181,10 @@ li {
 
 .js-foodmenu.is-open {
   right: 0;
+}
+
+.js-body.is-open {
+  height: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=common.css.map */
